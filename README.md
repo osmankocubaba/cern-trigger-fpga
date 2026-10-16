@@ -4,7 +4,7 @@ A Verilog-based event trigger logic design and verification environment modeling
 
 The pipeline simulates incoming high-speed ADC streams from calorimeter sensors, compares energy levels against a programmable threshold, and asserts an event trigger flag with zero-latency response.
 
-# Architecture and Workflow
+## Architecture and Workflow
 
 1. **Synthetic Data Generator (`generate_data.py`)**: 
    - Generates simulated baseline detector noise and injects high-energy particle collision hits using NumPy.
@@ -19,7 +19,7 @@ The pipeline simulates incoming high-speed ADC streams from calorimeter sensors,
    - Emulates a 100 MHz master clock and system active-low reset.
    - Ingests `detector_stream.txt` via `$fopen` / `$fscanf` to stimulate the RTL design cycle-by-cycle.
 
-# Tools and Specifications
+### Tools and Specifications
 - **HDL:** Verilog-2001
 - **EDA Tool:** AMD Vivado 2026.1
 - **Simulator:** XSim (Behavioral Simulation)
